@@ -1,8 +1,8 @@
-module "web-app" {
+module "wordpress" {
   source                 = "terraform-aws-modules/ec2-instance/aws"
   version                = "2.3"
 
-  name                   = "web-app"
+  name                   = "wordpress"
   instance_count         = 3
 
   ami                    = "ami-01ed306a12b7d1c96"
