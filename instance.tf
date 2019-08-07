@@ -1,6 +1,6 @@
 module "wordpress" {
-  source                 = "terraform-aws-modules/ec2-instance/aws"
-  version                = "2.3"
+  source                 = "StayWell/wordpress/aws"
+  version                = "0.1.8"
 
   name                   = "wordpress"
   instance_count         = 3
