@@ -8,6 +8,7 @@ module "wordpress" {
   ami                    = "ami-01ed306a12b7d1c96"
   instance_type          = "t2.micro"
   key_name               = "winkey-terraf"
+  user_data              = "${file("userdata.sh")}"
   vpc_security_group_ids = ["vpc-0fdce58874d88b2c0"]
   subnet_id              = "subnet-00ea490525fc6fa66"
 }
