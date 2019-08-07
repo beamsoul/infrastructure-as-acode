@@ -1,6 +1,6 @@
 module "wordpress" {
   source                 = "StayWell/wordpress/aws"
-  version                = "0.1.8"
+  version                = "0.2.8"
 
   name                   = "wordpress"
   instance_count         = 3
