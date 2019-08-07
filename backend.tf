@@ -1,7 +1,7 @@
 terraform  {
     backend "s3" {
         bucket = "infrastructure-wordpress-janna"
-        region = "us-west-2a"
+        region = "${var.region}"
         key = "infra.state"
     }
 }   
