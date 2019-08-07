@@ -1,7 +1,6 @@
 resource "aws_subnet" "public" {
-  count      = "${length(var.public_subnet)}"
   vpc_id     = "${aws_vpc.dev.id}"
-  cidr_block = "10.0.3.0/24"
+  cidr_block = "10.0.1.0/24"
 
   tags = {
       Name = "${var.Name}.public"
@@ -14,9 +13,8 @@ resource "aws_subnet" "public" {
 
 
 resource "aws_subnet" "private" {
-  count      = "${length(var.private_subnet)}"
   vpc_id     = "${aws_vpc.dev.id}"
-  cidr_block = "10.0.4.0/24"
+  cidr_block = "10.0.2.0/24"
 
   tags = {
       Name = "${var.Name}.private"

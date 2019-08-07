@@ -4,11 +4,11 @@ module "mysql" {
   name = "mysql"
 
 
-  # Launch configuration
-  lc_name = "mysql-lc"
+  name = "mysql"
   image_id        = "${var.ami}"
   instance_type   = "${var.instance_type}"
   security_groups = ["${aws_security_group.privateDB.id}"]
+  
    tags = {
       Name = "${var.Name}.private"
       Env = "${var.Env}"
