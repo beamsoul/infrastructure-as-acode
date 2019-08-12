@@ -1,5 +1,4 @@
-
-  output "VPC" {
+output "VPC" {
   value = "${aws_vpc.dev.id}"
 }
 
@@ -24,4 +23,3 @@ output "key_name" {
 output "region" {
   value = "${var.region}"
 }
-
