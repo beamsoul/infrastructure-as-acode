@@ -3,11 +3,11 @@ output "VPC" {
 }
 
 output "public_subnet_private" {
-  value = "${aws_subnet.id}"
+  value = "${aws.subnet.id}"
 }
 
 output "private_subnet_public" {
-  value = "${aws_subnet.id}"
+  value = "${aws.subnet.id}"
 }
 
 output "aws_sec_group" {
