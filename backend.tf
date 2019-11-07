@@ -1,7 +1,7 @@
 terraform  {
     backend "s3" {
-        bucket = "infrastructure-april-janna"
-        region = "us-east-2"
+        bucket = "beam-soul"
+        region = "us-west-2"
         key = "infra.state"
     }
 }   
