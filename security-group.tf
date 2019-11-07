@@ -37,7 +37,7 @@ resource "aws_security_group" "public" {
       Dept = "${var.Dept}"
   }
 }
-resource "aws_security_group" "privateDB" {
+resource "aws_security_group" "private" {
   name        = "privateDB"
   description = "Allow mysql traffic"
   vpc_id      = "${aws_vpc.dev.id}"
